@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body{
+    background-color: rgba(231, 229, 204, 0.833);
+    font-family: 'Rubik', sans-serif;
+}
+
+header{
+    background: rgb(255, 255, 255);
+    font-weight: 300;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+   /* z-index: 999;*/
+}
+img{
+    height: 150px;
+    float: left;
+    /*margin-bottom: 50px;*/
+}
+
+nav{
+    float: right;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+/*#menu{
+    list-style: none;
+    display: inline-block;
+}*/
+
+button{
+    background: rgba(165, 116, 42, 0.547);
+    color: rgb(255, 255, 255);
+    
+    border: none;
+    padding: 10px 40px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: semibold;
+    cursor: pointer;
+   /* hover: background-color grey;*/
+}
+
+main{
+    margin-top: 180px;
+    margin-left: 50px;
+    margin-right: 150px;
+}
+#nosotros{
+    margin: 50px;
+    background-color: rgba(165, 116, 42, 0.547);
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: semibold;
+    color: white
+}
+#bombon{
+    height: 500px;
+    margin: 50px;
+}
+
+#mision{
+    
+}
