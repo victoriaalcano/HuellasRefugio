@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-
+*{box-sizing: border-box;}
 body{
     background-color: #F7F5F2;
     font-family:'Rubik', sans-serif;
-    color:#4F4429;
+    color:#4F4429
 }
 
 header{
@@ -27,6 +27,7 @@ header{
 
 }
 
+
 nav{
     float: right;
     margin-top: 15px;
@@ -35,29 +36,61 @@ nav{
 }
 
 button{
-    background-color: rgb(255, 255, 255);
+    font-family: 'Rubik', sans-serif;
+    background-color: #C2A87E;
     border: none;
-    color: rgb(109, 120, 130);
+    color: black;
     padding: 5px 15px;
     text-align: center;
-    text-decoration: none;
-/*     display: inline-block; */
     font-size: 20px;
     margin: 30px 20px;
     cursor: pointer;
     border-radius: 15px;
     margin-right: 10px;
-    font-family: 'Rubik', sans-serif;
     font-weight: 100;
 }
 
-
-main{
-    margin-top: 180px;
-    margin-left: 50px;
-    margin-right: 150px;
+button:hover{
+    background-color: black;
+    color: white;
 }
 
+button:visited{
+    background-color: white;
+    color: black;
+}
+#unirse{
+    background-color: black;
+    color: white;
+}
+#unirse:hover{
+    background-color: rgba(249, 249, 249, 0.2);
+    color: black;
+    border: solid 1px black;
+}
+/* #btn{
+    background-color: #C2A87E;
+    width: fit-content;
+    height: 100px;
+    margin-top: 600px;
+    margin-left: 250px;
+
+} */
+
+
+#unirse2{
+    background-color: transparent;
+    border: #4F4429 solid 2px;
+    color: #4F4429;
+    font-style: italic;
+    margin-top: 600px;
+    margin-left: -320px;
+}
+
+#unirse2:hover{
+    background-color: #4F4429;
+    color: white;
+}
 
 h1{
     font-size: 51px;
@@ -65,22 +98,30 @@ h1{
     margin-left: 100px;
     margin-top: 0px;
 }
-
+.nosotros{
+    margin-top: 200px;
+    padding-bottom: 100px;
+    padding-top: 30px;
+    
+}
 #parrafo1{
     font-size: 25px;
     font-weight: 300;
+    margin-left: 50px;
 }
 #bombon{
     height: 450px;
     border-radius: 40px;
     float: right;
    margin-top: -110px;
+   margin-right: 150px;
 }
+
 
 .mision{
 
-    margin-top: 300px;
-    margin-bottom: 100px;
+    margin-top: 500px;
+    margin-bottom: 0px;
     margin-left: 0px;
     border-left: 0px; 
     padding-top: 100px;
@@ -105,4 +146,5 @@ h1{
     float: left;
     margin-left: 180px;
     margin-top: 80px;
+    margin-bottom: 100px;
 }
