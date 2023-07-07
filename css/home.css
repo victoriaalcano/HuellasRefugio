@@ -1,40 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-*{box-sizing: border-box;}
-body{
-    background-color: #F7F5F2;
-    font-family:'Rubik', sans-serif;
-    color:#4F4429
+*{
+    box-sizing: border-box;
 }
 
+body{
+    background-color: #F7F5F2;
+    font-family: 'Rubik', sans-serif;
+    color: #4F4429;
+}
+
+/* LA SECCION DE ENCABEZADOS MARRONCITO */
 header{
     background-color: #C2A87E;
-    height: 121px;
+    height: 120px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
-}
-    
-
-#logo{
-    height: 350px;
-    width: 400px;
-    margin-left: 50px;
-    margin-top: -120px;
-
 }
 
-
+/* LA BARRA DE MENU */
 nav{
-    float: right;
-    margin-top: 15px;
-    margin-right: 50px;
-    display: flex;
+    height: 100px;
+    width: 100%;
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
 }
 
+/* ICONO HUELLAS */
+.logo{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+/* BOTON DE HAMBURGUESA_ICON */
+.burger-btn{
+    font-size: 25px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer; /* para que el cursor se transforme en una manita cuando se pase por encima del boton */
+    position: absolute;
+    top:30px;
+    right: 30px; /* para que el boton de hamburguesa se ubique en la esquina superior derecha */
+}
+
+/* MENU DESPLEGABLE */
+.nav-menu{
+    position: fixed; /* para que el menu desplegable se mantenga en la misma posicion aunque se haga scroll */
+    width: 100%;
+    padding: 0;
+    height: 0vh; /* 0vh para que no se vea el menu desplegable hasta que se haga click en el boton */
+    top: 100px;
+    background-color: black; /* color de fondo del menu desplegable */
+    text-align: center; /* para que las opciones del menu se ubiquen en el centro */
+    transition: all .5s; /* para que el menu desplegable se despliegue de forma gradual */
+}
+
+/* OPCIONES DEL MENU */
+.nav-menu li{
+    display: none; /* para que no se vean las opciones del menu hasta que se haga click en el boton. PRIMERO ESTA PARTE SE DEJA EN COMENTARIOS PORQUE SINO NO PUEDO VER LAS OPCIONES DEL MENU MIENTRAS LAS HAGO*/
+    line-height: 50px; /* espacio entre el techo del texto de las opciones y la barra que lo contiene. */
+    margin: 50px 0; /* espacio entre opciones */
+    transition: all .5s;
+}
+
+/* TEXTO DE CADA OPCION DEL MENU */
+.nav-menu li a{
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/*opciones del menu, raton x encima*/
+.nav-menu li a:hover {
+    background-color: #C2A87E; /* Color de fondo en hover */
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+/*opcion actual del menu*/
+.nav-menu li a.active{
+    background-color: #C2A87E; /* Color de fondo en hover */
+    display: block;
+    height: 50px;
+    width: 100%;
+}
+
+/* CLIQUEO Y RATON POR ENCIMA */
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: black;
+    transition: all .3s;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li{
+    display: block;
+}
 button{
     font-family: 'Rubik', sans-serif;
     background-color: #C2A87E;
@@ -56,8 +131,7 @@ button:hover{
 }
 
 button:visited{
-    background-color: white;
-    color: black;
+    color: white;
 }
 #unirse{
     background-color: black;
@@ -102,6 +176,7 @@ h1{
     margin-top: 200px;
     padding-bottom: 100px;
     padding-top: 30px;
+    z-index: 1;
     
 }
 #parrafo1{
